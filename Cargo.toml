@@ -1,0 +1,15 @@
+[package]
+name = "cutoff_list"
+description = "A linked-list structure where each element tracks how many predefined \"cutoff points\" precede or coincide with its position in the list sequence."
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+documentation = "https://docs.rs/cutoff_list"
+repository = "https://github.com/dspyz-matician/cutoff_list"
+
+[dependencies]
+index_list = "0.2.15"
+
+[dev-dependencies]
+quickcheck = "1.0.3"
+quickcheck_macros = "1.0.0"
