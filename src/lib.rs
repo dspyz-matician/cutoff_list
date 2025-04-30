@@ -248,9 +248,9 @@ impl<T> CutoffList<T> {
     /// is greater than or equal to `self.cutoff_positions[q]`.
     ///
     /// If `q` is out of bounds or if the `q`-th cutoff position is beyond the
-    /// list's end, returns `Index::default()` (representing `None`).
+    /// list's end, returns [`Index::new()`] (the index representing `None`).
     #[inline]
-    pub fn following_ind(&self, q: usize) -> Index {
+    pub fn index_following_qth_cutoff(&self, q: usize) -> Index {
         self.following_ind.get(q).copied().unwrap_or_default()
     }
 
